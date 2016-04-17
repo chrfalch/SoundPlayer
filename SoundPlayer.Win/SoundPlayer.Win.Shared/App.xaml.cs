@@ -63,6 +63,9 @@ namespace SoundPlayer.Win
                 // Create a Frame to act as the navigation context and navigate to the first page
                 rootFrame = new Frame();
 
+                // Add the global MediaElement
+                Current.Resources.Add("GlobalMedia", new MediaElement());
+
                 // TODO: change this value to a cache size that is appropriate for your application
                 rootFrame.CacheSize = 1;
 
